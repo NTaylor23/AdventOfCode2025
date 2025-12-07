@@ -25,7 +25,7 @@ for j in range(len(rows[0]) - 1, -1, -1):
     numbers = [rows[i][j] for i in range(len(rows))]
     operator = mul if operators.pop().strip() == "*" else add
     initial = int(operator is mul)  # initial value 1 if multiplying, 0 if adding
-    
+
     p1 += reduce(operator, map(int, numbers), initial)
     p2 += reduce(operator, map(int, flip(numbers)), initial)
 

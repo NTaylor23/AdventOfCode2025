@@ -8,4 +8,6 @@ Note: Puzzle inputs are not committed to this repository. No LLM tools are being
 | 02  | Gift Shop           | [day02.py](/day02.py) |
 | 03  | Lobby               | [day03.py](/day03.py) |
 | 04  | Printing Department | [day04.py](/day04.py) |
-| 05  | Trash Compactor     | [day06.py](/day06.py) |
+| 05  | Cafeteria           | [day05.py](/day05.py) |
+| 06  | Trash Compactor     | [day06.py](/day06.py) |
+| 07  | Laboratories        | [day07.py](/day07.py) |
