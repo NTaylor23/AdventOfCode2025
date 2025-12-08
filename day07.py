@@ -8,7 +8,6 @@ start, p1, splitters = data[0].index("S"), 0, {}
 for y, line in enumerate(data):
     splitters[y] = {x for x, col in enumerate(line) if col == "^"}
 
-
 beams = set([start])
 for y in range(len(data)):
     hits = beams & splitters[y]
