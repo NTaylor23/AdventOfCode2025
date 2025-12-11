@@ -1,7 +1,5 @@
 from session import AdventOfCodeSession
 
-session = AdventOfCodeSession(day=3)
-
 
 def get_output(bank, sz):
     stack = []
@@ -14,7 +12,7 @@ def get_output(bank, sz):
 
 
 p1 = p2 = 0
-for line in session.puzzle_input.splitlines():
+for line in AdventOfCodeSession(day=3).puzzle_input.splitlines():
     digits = list(map(int, list(line)))
     p1 += get_output(digits, 2)
     p2 += get_output(digits, 12)

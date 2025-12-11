@@ -1,8 +1,6 @@
 from session import AdventOfCodeSession
 
-session = AdventOfCodeSession(day=5)
-
-range_list, id_list = session.puzzle_input.split("\n\n")
+range_list, id_list = AdventOfCodeSession(day=5).puzzle_input.split("\n\n")
 ranges = [list(map(int, range.split("-"))) for range in range_list.split()]
 ranges.sort(key=lambda range: range[0])
 

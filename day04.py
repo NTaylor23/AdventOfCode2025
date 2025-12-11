@@ -1,8 +1,7 @@
 from session import AdventOfCodeSession
 
-session = AdventOfCodeSession(day=4)
 adj = [(0, 1), (1, 0), (0, -1), (-1, 0), (-1, -1), (1, 1), (1, -1), (-1, 1)]
-data = session.puzzle_input.splitlines()
+data = AdventOfCodeSession(day=4).puzzle_input.splitlines()
 
 p1 = p2 = 0
 initial_rolls = set()

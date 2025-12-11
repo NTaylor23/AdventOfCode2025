@@ -2,8 +2,6 @@ from math import ceil
 
 from session import AdventOfCodeSession
 
-session = AdventOfCodeSession(day=2)
-
 
 def is_repeated_twice(n):
     s = str(n)
@@ -12,7 +10,9 @@ def is_repeated_twice(n):
 
 p1 = p2 = 0
 
-for start, end in [r.split("-") for r in session.puzzle_input.split(",")]:
+for start, end in [
+    r.split("-") for r in AdventOfCodeSession(day=2).puzzle_input.split(",")
+]:
     invalid_numbers = set()
 
     for length in range(len(start), len(end) + 1):

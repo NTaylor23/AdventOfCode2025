@@ -1,11 +1,9 @@
 from session import AdventOfCodeSession
 
-session = AdventOfCodeSession(day=1)
-
 p1 = p2 = 0
 pos = 50
 
-for line in session.puzzle_input.splitlines():
+for line in AdventOfCodeSession(day=1).puzzle_input.splitlines():
     distance = int(line[1:])
     sign = 1 if line[0] == "R" else -1  # R = 1, L = -1
 
